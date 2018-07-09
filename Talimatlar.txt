@@ -1,0 +1,12 @@
+
+Program baþlangýçta bir bilgi ekraný, yetkili giriþ paneli, modül seçim ekraný, alt modül seçim ekranlarý ve veri etkileþim kýsýmlarýndan oluþur.
+
+Programýn iþleyiþi header modülleme mantýðýyla tasarlanmýþtýr.
+
+Bir adet ana fonksiyonda modüllerin içerisideki fonksiyonlarýn çaðýrýlmasýyla iþlevler yerine getirilir.
+
+4 tane alt modül seçim ekraný ve 1 tane modül seçim ekraný vardýr.
+
+Giriþ panelinden baþarýyla programa giriþ yapan kullanýcý yapmak istediði göreve uygun modülü ve alt modülü seçer. Ekrandaki talimatlara uyarak iþlem yapabilir.
+
+Programýn Türkçe veri kaydedebilmesi ve aramasý için iþletim sisteminizin Türkçe olmasý gerekmektedir. Türkçe veri giriþ ve listeleme özellikleri için iþletim sistemi dil ayarlarýnýn Türkçe seçilmiþ olup olmadýðýný kotrol edin.

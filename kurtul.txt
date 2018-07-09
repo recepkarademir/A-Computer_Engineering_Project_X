@@ -1,0 +1,6 @@
+if(!!feof(kontrol)) // Son bulduðunu iki defa yazmamasý için.
+			{
+				break; // whiledan ayrýl.
+			}
+
+iki defa yazdýrmasýn diye eklediðin þeyleri sil yazdýrdýktan sonra break i koy geresi gereksiz.
