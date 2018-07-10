@@ -5,7 +5,7 @@
 using namespace std;
 
 int secimekrani()//Alt Modüllerini Seçmek için kullanýlan fonksiyon.
-{ 
+{
 	char altsecim=0;
 	system("cls");
 	system("color F1");
@@ -158,7 +158,7 @@ void OgrenciAdiylaArama() // ogrenci.txt içerisinde öðrencinin adýyla arandýðý f
 }
 
 void OgrenciBolumeGoreListeleme() // ogrenci.txt içerisindeki veri okunup ekrana bolumun adýna göre alfabetik olarak sýralanýyor.
-{	
+{
 	system("cls");
 	FILE *read;
 	char adsoyad[20],bolum[25];
@@ -184,18 +184,24 @@ void OgrenciBolumeGoreListeleme() // ogrenci.txt içerisindeki veri okunup ekrana
 		int p=0;
 		while(!feof(read))// bütün doküman incelenip harf sýrasý gelen listeleniyor.
 		{
+			fscanf(read,"%10d %20s %25s %3d", &no,adsoyad,bolum,&sinif);
+			
 			while(p<32)
 			{
-				fscanf(read,"%10d %20s %25s %3d", &no,adsoyad,bolum,&sinif);
-				
 				if(bolum[0]==alfabe[p] or bolum[0]==buyukalfabe[p])
 				{
+					if(!!feof(read)) // Son bulduðunu iki defa yazmamasý için.
+					{
+						break; // whiledan ayrýl.
+					}
 					printf("%10d %20s %25s %3d",no,adsoyad,bolum,sinif);
 					cout<<endl;
+					
 				}
 				p++;
 			}
 			p=0;
+			
 		}
 	
 	
